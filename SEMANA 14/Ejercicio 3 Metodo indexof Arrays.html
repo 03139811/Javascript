@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO INDEXOF</title>
+</head>
+<body>
+    <center>
+        <img src="./IMG/LOGO INCAP.jpg"alt="" width="150" height="150">
+        <h1>METODO INDEXOF EN ARRAY</h1>
+        <h2>BUSQUEDA DE ELEMENTOS</h2>
+        <br><br>
+        <p>ESTUDIANTE SE ENTRA EN EL INDICE No.</p>
+        <p id="std"></p>
+        <script>
+            //Creacion
+            let num;
+            let std=new Array();
+            //CAPTURA
+            num=parseInt(prompt("INGRESE CANTIDAD ELEMENTOS A GUARDAR.."));
+            for(i=0;i<num;i++){
+                std[i]=prompt("Ingrese NOMBRE STD A GUARDAR");
+            }
+            //BUSQUEDA
+            let datob=prompt("INGRESE NOMBRE STD A BUSCAR...");
+            let find=std.indexOf(datob.trim());
+            //Validar si el dato STD se encontro 0=verdadero //-1=falso
+            if (find>-1){
+                document.getElementById("std").innerHTML=find+"&nbsp"+datob;
+            }else{
+                document.getElementById("std").innerHTML="ERROR.. NO SE ENCONTRO STD";
+            }
+        </script>
+    </center>
+</body>
+</html>

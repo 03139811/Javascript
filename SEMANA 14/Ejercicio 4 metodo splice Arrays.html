@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO SPLICE</title>
+</head>
+<body>
+    <center>
+        <img src="./Img/LOGO INCAP.jpg" alt=""width="150" height="150">
+        <h1>METODO SPLICE ARRYS</h1>
+        <h2>BUSQUEDA/ELIMINACION DE ELEMENTOS</h2>
+        <br><br>
+        <p>EL NUMEROARRYS ES EL SIGUIENTE:</p>
+        <script>//Creacion
+            let num;
+            let std=new Array();
+            //CAPTURA
+            num=parseInt(prompt("INGRESE CANTIDAD ELEMENTOS A GUARDAR.."));
+            for (i=0;i<num;i++){
+                std[i]=prompt("INGRESE NOMBRE STD A GUARDAR");
+            }
+            //BUSQUEDA
+            let datob=prompt("INGRESE NOMBRE STD A BUSCAR...");
+            let find=std.indexOf(datob.trim());
+            //APLICAR METODO SPLICE
+            if(find>-1){
+                let index=stde.splice(find,1)//Eliminar en la ubicacion encontrada
+                alert("STD ELIMINADO EXITOSAMENTE..."+"\n"+"LISTA NUEVA..."+std);
+                }else{
+                    alert("ERROR...STD NO ENCONTRADO EN ARRAY");
+                }
+                document.write(std+",");
+                console,log(std);
+            
+        </script>
+    </center>
+</body>
+</html>
